@@ -33,7 +33,7 @@
 {% endfor %}
 
 <div class="page-header">
- <h1>Hello, {% if name %}{{ name }}{% else %}Stranger{% endif %}!</h1>
+ <h1>Hello, {% if name %}{{ name }}! Welcome to Lab3 Docker{% else %}Stranger{% endif %}!</h1>
  <h1>{% if email %} {% if email != "non-uoft"%}Your UofT email is {{email}} {% else %}Please use your UofT email.{%endif %} {% else %} {% endif %}</h1>
 </div>
 {{ wtf.quick_form(form) }}
